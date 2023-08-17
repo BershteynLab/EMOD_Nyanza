@@ -64,34 +64,7 @@
             "class": "CampaignEvent"
         },
         {
-            "COMMENT": "Have a NLHTIV setup to get newborns that are set to Yes - this is the 80% defined in demograhics",
-            "Event_Coordinator_Config": {
-                "Intervention_Config": {
-                    "Actual_IndividualIntervention_Config": {
-                        "Broadcast_Event": "ShouldNotHappen",
-                        "Delay_Period_Constant": 1000000,
-                        "Delay_Period_Distribution": "CONSTANT_DISTRIBUTION",
-                        "Intervention_Name": "Accessibility_Delay",
-                        "New_Property_Value": "",
-                        "class": "HIVDelayedIntervention"
-                    },
-                    "Property_Restrictions": [
-                        "Accessibility:Yes"
-                    ],
-                    "Trigger_Condition_List": [
-                        "Births"
-                    ],
-                    "class": "NodeLevelHealthTriggeredIV"
-                },
-                "class": "StandardInterventionDistributionEventCoordinator"
-            },
-            "Nodeset_Config": {
-                "class": "NodeSetAll"
-            },
-            "Start_Year": 2009.9,
-            "class": "CampaignEventByYear"
-        },
-        {
+            "Event_Name": "Increase care accessibility",
             "COMMENT": "Assume people without the intervention are Accessibility:No - people not set to Yes when born - the other 20%.",
             "Event_Coordinator_Config": {
                 "End_Year": 2099,
@@ -298,7 +271,7 @@
                 },
                 "class": "StandardInterventionDistributionEventCoordinator"
             },
-            "Event_Name": "Consider immediate ART (after 2016?)",
+            "Event_Name": "Consider immediate ART (after 2016?) - Female",
             "Nodeset_Config": {
                 "class": "NodeSetAll"
             },
@@ -399,7 +372,7 @@
                 },
                 "class": "StandardInterventionDistributionEventCoordinator"
             },
-            "Event_Name": "Consider immediate ART (after 2016?)",
+            "Event_Name": "Consider immediate ART (after 2016?) - Male",
             "Nodeset_Config": {
                 "class": "NodeSetAll"
             },
@@ -3822,6 +3795,7 @@
             "class": "CampaignEventByYear"
         },
         {
+            "Event_Name": "ANC choose partners for testing",
             "Event_Coordinator_Config": {
                 "Intervention_Config": {
                     "Actual_IndividualIntervention_Config": {
@@ -3854,6 +3828,7 @@
             "class": "CampaignEventByYear"
         },
         {
+            "Event_Name":"Mark partners of those in ANC",
             "Event_Coordinator_Config": {
                 "Intervention_Config": {
                     "Actual_IndividualIntervention_Config": {
@@ -3914,6 +3889,7 @@
             "class": "CampaignEventByYear"
         },
         {
+            "Event_Name":"Mark index partners",
             "Event_Coordinator_Config": {
                 "Intervention_Config": {
                     "Actual_IndividualIntervention_Config": {
